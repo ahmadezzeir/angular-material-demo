@@ -7,6 +7,9 @@ import { FormsModule } from '@angular/forms';
 
 import { AppMaterialModule } from './app.material.module';
 import { AppComponent, DialogContentComponent } from './app.component';
+import { LeftMenu1Component } from './left-menu1/left-menu1.component';
+import { MasterComponent } from './master/master.component';
+
 
 @NgModule({
   imports: [
@@ -15,7 +18,7 @@ import { AppComponent, DialogContentComponent } from './app.component';
     AppMaterialModule,
     BrowserAnimationsModule
   ],
-  declarations: [AppComponent, DialogContentComponent],
+  declarations: [AppComponent, DialogContentComponent, LeftMenu1Component, MasterComponent],
   entryComponents: [DialogContentComponent],
   bootstrap: [AppComponent],
 })
