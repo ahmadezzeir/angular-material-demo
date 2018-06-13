@@ -1,47 +1,63 @@
 <mat-card>
   <mat-card-content>
     <!-- <h2 class="example-h2">Flight Details</h2> -->
-    <mat-grid-list cols="5" rowHeight="100px">
-      <mat-grid-tile class="grid-test-1" [colspan]="1" [rowspan]="2">
-        <img src="http://pics.avs.io/200/200/SV.png">
+    <mat-grid-list cols="6" rowHeight="100px" >
+      <mat-grid-tile class="grid-test-1" [colspan]="2" [rowspan]="1" style="background-color: greenyellow">
+        <img src="http://pics.avs.io/200/200/SV.png" id="airline_logo">
       </mat-grid-tile>
+      <mat-grid-tile class="grid-test-1" [colspan]="2" [rowspan]="1" style="background-color: greenyellow">
+          <mat-list role="list">
+            <mat-list-item role="listitem">
+              <mat-icon>home</mat-icon>Riyadh</mat-list-item>
+            <mat-list-item role="listitem">
+              <mat-icon>flight</mat-icon>SV 1234</mat-list-item>
 
-      <mat-grid-tile class="grid-test-1" [colspan]="1" [rowspan]="2" >
-        <mat-list role="list">
-          <mat-list-item role="listitem">
-            <mat-icon>home</mat-icon>Riyadh</mat-list-item>
-          <mat-list-item role="listitem">
-            <mat-icon>flight</mat-icon>SV 1234</mat-list-item>
+          </mat-list>
+        </mat-grid-tile>
+        <mat-grid-tile class="grid-test-1" [colspan]="2" [rowspan]="1" style="background-color: greenyellow">
+            <mat-list role="list">
+              <mat-list-item role="listitem">
+                <mat-icon>date_range</mat-icon>OBT: 10:10
+              </mat-list-item>
+              <mat-list-item role="listitem">
+                <mat-icon>date_range</mat-icon>SCH:10:30
+              </mat-list-item>
+            </mat-list>
+          </mat-grid-tile>
+          <mat-grid-tile class="grid-test-1" [colspan]="2" [rowspan]="1" style="background-color: greenyellow">
 
-        </mat-list>
-      </mat-grid-tile>
-      <mat-grid-tile class="grid-test-1" [colspan]="1" [rowspan]="2" >
-        <mat-list role="list">
-          <mat-list-item role="listitem">
-            <mat-icon>date_range</mat-icon>
-            On-Block:10:10</mat-list-item>
-          <mat-list-item role="listitem">
-            <mat-icon>date_range</mat-icon>Schdule: 00:30</mat-list-item>
-
-        </mat-list>
-      </mat-grid-tile>
-
-
-
-      <mat-grid-tile class="grid-test-1" [colspan]="1" [rowspan]="1" >
-
-        <mat-list role="list">
-            <mat-list-item role="listitem"> <button mat-raised-button color="primary">
-                <mat-icon>done</mat-icon>First</button></mat-list-item>
-          <mat-list-item role="listitem">Time</mat-list-item>
-
-        </mat-list>
-      </mat-grid-tile>
+              <mat-list role="list">
+                  <mat-list-item role="listitem">  <button mat-mini-fab id="done">
+                      <mat-icon>done</mat-icon>
+                    </button></mat-list-item>
+                  <mat-list-item role="listitem">  <button mat-mini-fab id="done_all">
+                      <mat-icon>done_all</mat-icon>
+                    </button></mat-list-item>
+              </mat-list>
 
 
-      <mat-grid-tile class="grid-test-1" [colspan]="1" [rowspan]="2" >
+            </mat-grid-tile>
+
+        <mat-grid-tile class="grid-test-1" [colspan]="2" [rowspan]="1" style="background-color: greenyellow">
+
+            <mat-list role="list">
+                <mat-list-item role="listitem">    10:00 pm</mat-list-item>
+                <mat-list-item role="listitem">  10:30 pm</mat-list-item>
+            </mat-list>
+
+          </mat-grid-tile>
+
+
+
+
+
+
+
+
+
+      <mat-grid-tile class="grid-test-1" [colspan]="2" [rowspan]="1" style="background-color: greenyellow">
         <mat-form-field>
-          <mat-select placeholder="Select Belt Number">
+          <mat-select placeholder="Belt Number">
             <mat-option>
               1
             </mat-option>
@@ -61,15 +77,10 @@
         </mat-form-field>
 
       </mat-grid-tile>
-      <mat-grid-tile class="grid-test-1" [colspan]="1" [rowspan]="1">
 
-          <mat-list role="list">
-              <mat-list-item role="listitem"><button mat-raised-button color="warn">
-                  <mat-icon>done_all</mat-icon>Warn</button></mat-list-item>
-            <mat-list-item role="listitem">Time</mat-list-item>
-
-          </mat-list>
-        </mat-grid-tile>
     </mat-grid-list>
   </mat-card-content>
+
+  <mat-divider></mat-divider>
+
 </mat-card>
